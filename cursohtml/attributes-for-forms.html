@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Atributos para formularios</title>
+</head>
+<body>
+    <form>
+     <div>
+       <label for="name">Nombre</label>
+        <input type="text" id="name" placeholder="escribe tu nombre" autofocus>
+     </div>
+     <div>
+        <label for="country">País</label>
+         <input type="text" id="country" value="Argentina" readonly>
+     </div>
+     <div>
+        <label for="nickname">Apodo</label>
+         <input type="text" id="nickname" disabled >
+     </div>
+     <div>
+        <label for="age">Edad</label>
+         <input type="number" id="age" min="13" max="40" recuired>
+     </div>
+     <div>
+        <label for="password">Contraseña</label>
+         <input type="text" id="password" minlength="5" maxlength="10" >
+     </div>
+
+     <input type="submit">
+
+    </form>
+</body>
+</html>

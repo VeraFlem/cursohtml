@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inputs de seleccion</title>
+</head>
+<body>
+    <h1>Elementos seleccionables</h1>
+    <form>
+        <h2>Género</h2>
+        <label>Masculino
+            <input type="radio" name="gender" value="masculino">
+        </label>
+        <label>Femenino
+            <input type="radio" name="gender" value="femenino">
+        </label>
+        <label>otro
+            <input type="radio" name="gender" value="otro">
+        </label>
+    <h2>Lenguajes que sé</h2>
+      <label>HTML
+      <input type="checkbox" name="lenguage" value="html">
+      </label>
+
+      <label>CSS
+        <input type="checkbox" name="lenguage" value="css">
+      </label>
+
+      <label>JavaScript
+        <input type="checkbox" name="lenguage" value="javascript">
+      </label>
+    <h2>Etiqueta select</h2>  
+      <select name="lenguage" multiple>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="Jacascript">JavaScript</option>
+      </select>
+     <select name="pets">
+         <optgroup label="mamiferos">
+         <option value="gato">gato</option>
+         <option value="perro">perro</option>
+         <option value="conejo">conejo</option>
+         <option value="hamster">hamster</option>
+        </optgroup>
+        <optgroup label="aves">
+         <option value="loro">loro</option>
+         <option value="canario">canario</option>
+        </optgroup>
+        <optgroup label="reptiles">
+         <option value="serpiente">serpiente</option>
+         <option value="lagarto">lagarto</option>
+        </optgroup>
+     </select>
+<fieldset>
+  <legend>Datos personales</legend>
+  <div>
+    <label for="name">Nombre</label>
+    <input type="text" id="name">
+   </div>
+    
+   <div>
+     <label for="lastname">Apellido</label>
+     <input type="text" id="lastname">
+   </div>
+</fieldset>
+<div>
+<label for="archivo">Cargar archivo</label>
+<input type="file" id="archivo">
+</div>
+  <div>
+    <label for="energia">Nivel de energia</label>
+    <meter id="energia" min="0" max="100" value="80"></meter>
+  </div>
+  <div>
+    <label for="tarea">Progreso</label>
+    <progress id="tarea" max="100" value="60"></progress>
+  </div>
+  <label for="mensaje">Mensaje</label>
+  <textarea id="mensaje" cols="10" rows="10"></textarea>
+    </form>
+
+</body>
+</html>
